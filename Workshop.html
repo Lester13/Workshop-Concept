@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="wsSstyle.css" />
+    <script type="text/javascript" src="scripts/wsClasses.js"></script>
+    <title>WoWclasses</title>
+  </head>
+  <body>
+    <div id="ClassInfo">
+      <div id="config">
+        <div id="roles">
+          <div id="Tank">
+            <label>
+              <input
+                type="checkbox"
+                checked
+                id="tankCheck"
+                onchange="hideRoles('tank','tankCheck')"
+              />
+              Tanks</label
+            >
+          </div>
+          <div id="Heal">
+            <label>
+              <input
+                type="checkbox"
+                checked
+                id="healkCheck"
+                onchange="hideRoles('heal','healkCheck')"
+              />
+              Heiler</label
+            >
+          </div>
+          <div id="DPS">
+            <label>
+              <input
+                type="checkbox"
+                checked
+                id="dpsCheck"
+                onchange="hideRoles('dps','dpsCheck')"
+              />
+              DPS</label
+            >
+          </div>
+        </div>
+      </div>
+      <div id="BigContainer">
+        <!--- create widgets --->
+        <script>
+          // ------------------------------------------------------ hunter ------------------------------------------------------
+          spawnDiv(
+            "Beastmaster - Tierherrschaft",
+            1,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE", "M+"),
+            new Array(
+              "B0PAAAAAAAAAAAAAAAAAAAAAAAaplcAACBAAAAAAAAAAgGEyBgIBJEJoJkWIJkIEQOQE",
+              "B0PAAAAAAAAAAAAAAAAAAAAAAgolWCACBAAAAAAAAAAgGEyBQOgESCRCaQESCRSEakEB",
+              "B0PAAAAAAAAAAAAAAAAAAAAAAggWCACBAAAAAAAAAAgGRKyBQEhkIROQoBRIJEJRoRSE"
+            ),
+            "#AAD372",
+            "dps"
+          );
+          spawnDiv(
+            "Marksmanship - Treffsicherheit",
+            -1,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE/M+"),
+            new Array(
+              "B4PAAAAAAAAAAAAAAAAAAAAAA4AgWAggAAAAAARCRSCiQEJlQaABhmQSSIhgGAAAAA",
+              "B4PAAAAAAAAAAAAAAAAAAAAAA4AEaBgIIIAAAAARSEJJIiQkUCAEEaCJJhECaAAAAAA"
+            ),
+            "#AAD372",
+            "dps"
+          );
+          spawnDiv(
+            "Survival - Überleben",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE/M+"),
+            new Array(
+              "B8PAAAAAAAAAAAAAAAAAAAAAA4AgWQSgEEkcAEJECJJBJCAAAAAQEEaCJSIhgGAAAAA",
+              "B8PAAAAAAAAAAAAAAAAAAAAAAQgWQCIBBJCplEIkkEkIAAAAAAhCKaCJSIhEKAAAAAA"
+            ),
+            "#AAD372",
+            "dps"
+          );
+          // ------------------------------------------------------ Paladin ------------------------------------------------------
+          spawnDiv(
+            "Retribution - Vergeltung",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE", "M+"),
+            new Array(
+              "BYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgokWSikAQaKJJpVCAAAAAAgQkkkWSQCFOQSQJKB",
+              "BYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAIaplkQOAApkSSSalAAAAAAAIEJJplEkQBJBloEA",
+              "BYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAICBgolWSC5AAkSKJJpVCAAAAAAg0EJJpJQCFkEUiSA"
+            ),
+            "#F48CBA",
+            "dps"
+          );
+          spawnDiv(
+            "Protection - Schutz",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+ (einfacher)", "M+ (spezieller)"),
+            new Array(
+              "BIEAAAAAAAAAAAAAAAAAAAAAA0iSIhcgiIJBNSCJEEAAAAAAAAAAAAAAQSSSkAJRJlAUiSA",
+              "BIEAAAAAAAAAAAAAAAAAAAAAA0iWChoItkElSDJSgQAAAAAAAAAAAAAAQTkkECkElUCQJKB",
+              "BIEAAAAAAAAAAAAAAAAAAAAAA0iWChodgIJhSjkQQCBAAAAAAAAAAAAAANRSSIQSUSJAloEA"
+            ),
+            "#F48CBA",
+            "tank"
+          );
+          spawnDiv(
+            "Holy - Heilig",
+            5,
+            "https://wago.io/DammYZ7ko",
+            new Array("RANGED HEAL", "MELEE HEAL", "M+"),
+            new Array(
+              "BEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAiARJSiWDpkESJBcAS0kgkSSikElUCAKB",
+              "BEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAACIRJtkQTkiESJBcAS0kgkSSikElUCAKB",
+              "BEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSAAAAAAAUSCQJSSKNRKJBlEQANJRSKSIJRJFAFEB"
+            ),
+            "#F48CBA",
+            "heal"
+          );
+          // ------------------------------------------------------ warrior ------------------------------------------------------
+          spawnDiv(
+            "Arms - Waffen",
+            2,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BcEAAAAAAAAAAAAAAAAAAAAAAAAkkkkkQko0SSAAAAABRkoQAEJQiAHgmEhASQIAAAAAAAA4AgEJA",
+              "BcEAAAAAAAAAAAAAAAAAAAAAAAQKRikkEkDEalEJBAAAABEJKkQUSkAhAHgiEhACECAAAAAAAAQLBAA"
+            ),
+            "#c69b6d",
+            "dps"
+          );
+          spawnDiv(
+            "Fury - Furor",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "Titanic Rage M+", "Storm of Swords M+"),
+            new Array(
+              "BgEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAhkgSAEBhIBHQjIhIQQIJERSSgQSSSkWEARSAAAA",
+              "BgEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQCKJEEBhIwB0ISICEESCJJSkAIJJhWaBQSSAAAAB",
+              "BgEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQCKJEEhEIwB0IEigEESgEJRikIkkEQSCIJBAAAA"
+            ),
+            "#c69b6d",
+            "dps"
+          );
+          spawnDiv(
+            "Protection - Schutz",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BkEAAAAAAAAAAAAAAAAAAAAAAIgAAAAASSSkkg0SKCKNEhIUEClkEgIA0CJJgAhAAAAAAAARAAoUaA",
+              "BkEAAAAAAAAAAAAAAAAAAAAAAIgAAAAASSSkkQSLpkgWBRgQRiElkEgAAtQSCIQIAAAAAAAABAAlG"
+            ),
+            "#c69b6d",
+            "tank"
+          );
+          // ------------------------------------------------------ Shaman ------------------------------------------------------
+          spawnDiv(
+            "Enhancment - Verstärkung",
+            5,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE / M+"),
+            new Array(
+              "BcQAAAAAAAAAAAAAAAAAAAAAAQSSKRCIJhAJUSIAAAAAAAAAAAAA0iQESIEAlEJFAlEJBA",
+              "BcQAAAAAAAAAAAAAAAAAAAAAAIRSaRCiIhgAlEJAAAAAAAAAAAAA0iQES0CBgEJFAlEJBA"
+            ),
+            "#0070DD",
+            "dps"
+          );
+          spawnDiv(
+            "Elmental - Elementar",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE / M+"),
+            new Array(
+              "BYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoVSSLJBSLRDBFkIBAAAAAAlAkSSUSRShIik0AQAE",
+              "BYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoVSSLJJFJtEFEUAOQAAAAAAQJApkElUkUIiIJNAEAB"
+            ),
+            "#0070DD",
+            "dps"
+          );
+          spawnDiv(
+            "Restoration - Wiederherstellung",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIBJRKJkWKBJFtoFUSIokAAIlIJNQgEJB",
+              "BgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIhkQSaRCpoFkU0AJlECpkECAIRAQJRkEB"
+            ),
+            "#0070DD",
+            "heal"
+          );
+          // ------------------------------------------------------ Monk ------------------------------------------------------
+          spawnDiv(
+            "Windwalker - Windläufer",
+            5,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE / M+"),
+            new Array(
+              "B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEJJJlkIRAAAAAJJEAgkkkWEkISiERiEKS4AAAA",
+              "B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAESkkElISSAAAAAJJkAASSgDkSkISIRkkEaJAAAA"
+            ),
+            "#00FF98",
+            "dps"
+          );
+          spawnDiv(
+            "Brewmaster - Braumeister",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE / M+"),
+            new Array(
+              "BYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoVSSLJBSLRDBFkIBAAAAAAlAkSSUSRShIik0AQAE",
+              "BYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoVSSLJJFJtEFEUAOQAAAAAAQJApkElUkUIiIJNAEAB"
+            ),
+            "#00FF98",
+            "tank"
+          );
+          spawnDiv(
+            "Mistweaver - Nebelwirker",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIBJRKJkWKBJFtoFUSIokAAIlIJNQgEJB",
+              "BgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIhkQSaRCpoFkU0AJlECpkECAIRAQJRkEB"
+            ),
+            "#00FF98",
+            "heal"
+          );
+          // ------------------------------------------------------ DK ------------------------------------------------------
+          spawnDiv(
+            "Unholy - Unheilig",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "Raid (Anduin Ring)", "M+"),
+            new Array(
+              "BwPAAAAAAAAAAAAAAAAAAAAAAAAIBSSgEgkEhk4AJJRAAAAAAAAAAKQkIAAgEpIlEJJJSC",
+              "BwPAAAAAAAAAAAAAAAAAAAAAAAAIBSSgEgkEhk4AJJRAAAAAAAAAAKQEgkGAIRKS5ARSSikA",
+              "BwPAAAAAAAAAAAAAAAAAAAAAAAAiESCHItIBISECkkEJAAAAAAAAAAkASkkCAApIFRSSikA"
+            ),
+            "#C41E3A",
+            "dps"
+          );
+          spawnDiv(
+            "Frost - Frost",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid (Breath)", "Raid (Obliterate)", "M+"),
+            new Array(
+              "BsPAAAAAAAAAAAAAAAAAAAAAAkIAIhkwBiIREikECIJRSQAiIIRSSSSKBAAAAAAAAAAAAA",
+              "BsPAAAAAAAAAAAAAAAAAAAAAAICASIJcgISEhIJhASSkEBgQCEJJJJpkEAAAAAAAAAAAAA",
+              "BsPAAAAAAAAAAAAAAAAAAAAAAkkAICSCHIiEBikECIJJJBBCiISkkkkEAAAAAAAAAAAAA"
+            ),
+            "#C41E3A",
+            "dps"
+          );
+          spawnDiv(
+            "Blood - Blut",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BoPAAAAAAAAAAAAAAAAAAAAAAACJhgk4AiIREJiECkkEJAAAAAAJOQCg0EiEAAQkkkkAAAAA",
+              "BoPAAAAAAAAAAAAAAAAAAAAAAACJJgk4ASLSEkISIQSSkAAAAAAIOQCEJNJiEAAgIJRAAAAA"
+            ),
+            "#C41E3A",
+            "tank"
+          );
+          // ------------------------------------------------------ Druide ------------------------------------------------------
+          spawnDiv(
+            "Feral - Wildheit",
+            2,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE", "M+"),
+            new Array(
+              "BcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkU0SiIJJJFAExBSCAAAAAAKCgkAgISCBJIhWCAAAAAAgEA",
+              "BcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkUQikkEJFNQSkIJAAAAAAoIASCAiIJEkgEaJAAAAAAASA",
+              "BcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIRSLtDgkkEJl0AEJSCAAAAAAKCgkAgISCBJIhWCAAAAAAgEA"
+            ),
+            "#FF7C0A",
+            "dps"
+          );
+          spawnDiv(
+            "Balance - Gleichgewicht",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid (Breath)", "M+"),
+            new Array(
+              "BYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAkkkIikkAQIJAaBJJhmcAChgEJJEJFAC",
+              "BYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAkkkIikkAQIJAaBREpIHICJISKJiESBgA"
+            ),
+            "#FF7C0A",
+            "dps"
+          );
+          spawnDiv(
+            "Guardian - Wächter",
+            1,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+"),
+            new Array(
+              "BgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASEJJplAkEJQEJNKCAOACSgkkkkkAAAAAAAAQEA",
+              "BgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASEJJpkAkEJQEJNKAAIJJBSSSSSiAAAAAAAAAA"
+            ),
+            "#FF7C0A",
+            "tank"
+          );
+          spawnDiv(
+            "Restoration - Wiederherstellung",
+            3,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "M+ (Necrolord)", "M+ (Kyrian)"),
+            new Array(
+              "BkGAAAAAAAAAAAAAAAAAAAAAAQkkoIJJR5AkEBAtIJAAAAAAAAAAAAAKChkIIIJAEsgASaJAAAAAAICA",
+              "BkGAAAAAAAAAAAAAAAAAAAAAAAJJaSSSCpFAJQJtkAAAAAAAAAAAAAQChkACgECBHIUSSQCAAAAAgAA",
+              "BkGAAAAAAAAAAAAAAAAAAAAAAAJJaSSSCaJBIQJtkAAAAAAAAAAAAAQChkACgECBHIUSSQCAAAAAgAA"
+            ),
+            "#FF7C0A",
+            "heal"
+          );
+          // ------------------------------------------------------ Demonhunter ------------------------------------------------------
+          spawnDiv(
+            "Havoc - Verwüstung",
+            2,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE", "M+"),
+            new Array(
+              "BEkAAAAAAAAAAAAAAAAAAAAAAQCIhIItkEJJCEAAAAAAASSApQSSBCpFhkEJBB",
+              "BEkAAAAAAAAAAAAAAAAAAAAAAgkkkkICSLJRSiABAAAAAAgkEQKkECSSaRgEAA",
+              "BEkAAAAAAAAAAAAAAAAAAAAAAgkkkkICSLJRkIQAAAAAAA0SSApRSIIJpFBSAA"
+            ),
+            "#A330C9",
+            "dps"
+          );
+          spawnDiv(
+            "Vengeance - Rachsucht",
+            4,
+            "https://wago.io/DammYZ7ko",
+            new Array("Raid", "AOE", "M+"),
+            new Array(
+              "BUkAAAAAAAAAAAAAAAAAAAAAAAAgIUiDERSARiABARLkIRSIJlkQIJhSQAAAAA",
+              "BUkAAAAAAAAAAAAAAAAAAAAAAAAgIUCRkEQkIQCARLkIRCSSJJSIJhSQAAAAA",
+              "BUkAAAAAAAAAAAAAAAAAAAAAAAAgIUCREARCQCgEtEJCJIJtkUSIJhSkEAAAAA"
+            ),
+            "#A330C9",
+            "tank"
+          );
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+/*basic stuff */
+body {
+  background-color: #121212;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+
+a :visited {
+  color: white;
+}
+
+a :link {
+  color: white;
+}
+
+a {
+  color: white;
+}
+.centered {
+  text-align: center;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.highflex {
+  flex-grow: 2;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowlex {
+  flex-grow: 1;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Overall */
+#ClassInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+/*Upper Bar */
+#config {
+  margin-bottom: 3mm;
+  height: 5vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1mm solid #ea7b0e;
+  width: 100vw;
+  display: flex;
+}
+
+#roles {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+
+/*Lower Body*/
+
+#BigContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  gap: 3mm;
+  overflow: auto;
+  height: 95vh;
+  margin: 0%;
+  width: 100vw;
+  background-image: url(media/LogoVonWish.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ClassContainer {
+  width: 100mm;
+  background-color: rgba(54, 54, 54, 0.97);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border-style: solid;
+  text-align: center;
+  padding-bottom: 4mm;
+  height: fit-content;
+  width: fit-content;
+  min-width: 100mm;
+  overflow: hidden;
+}
+
+.ClassTitle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1 !important;
+}
+
+.ClassSpec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 0%;
+  margin-bottom: 0%;
+  max-height: fit-content;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+
+.ClassSpec p {
+  padding-top: 0%;
+  font-size: large;
+  margin: 5%;
+}
+
+/*modul Parts */
+.difRaiting {
+  font-size: 7mm;
+  margin-top: 2mm;
+  margin-bottom: 3mm;
+  text-align: center;
+}
+
+.talentCode {
+  background-color: #121212;
+  color: white;
+  height: 5mm;
+  border: 1px solid;
+  font-size: xx-small;
+}
+
+.ClassHeadline {
+  font-size: 10mm;
+  margin-top: 0mm;
+  margin-bottom: 2mm;
+  text-align: center;
+}
+.ClassSpecTitle {
+  font-size: 7mm;
+  margin-top: 0mm;
+  margin-bottom: 2mm;
+  text-align: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.talentsBox {
+  min-height: 50mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.talentsBox h2 {
+  margin-bottom: 0mm;
+}
+
+.talentmargin {
+  margin-top: 1mm;
+  margin-bottom: 1mm;
+}
+
+.buildSrc {
+  font-size: 3mm;
+  font-style: italic;
+}
+.ClassName {
+  font-size: 7mm;
+  margin-top: 1mm;
+  margin-bottom: 2mm;
+  text-align: center;
+}
+
+.bottomBorder {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ClassButton {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 0mm;
+  font-size: large;
+}

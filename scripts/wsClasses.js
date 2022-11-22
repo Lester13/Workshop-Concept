@@ -22,6 +22,18 @@ function hideRoles(role, roleCheckBox) {
   });
 }
 
+function hideBySearch(search) {
+  var spec = document.getElementsByClassName("ClassSpecTitle");
+  console.log(search);
+  Array.from(spec).forEach((element) => {
+    if (element.innerText.toLowerCase().includes(search.toLowerCase())) {
+      element.parentElement.style.display = "flex";
+    } else {
+      element.parentElement.style.display = "none";
+    }
+  });
+}
+
 //--------------------- generate Class div script --------------------
 //difSettings
 var MaxDifficulty = 5;

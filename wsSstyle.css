@@ -63,6 +63,29 @@ a {
   display: flex;
 }
 
+#searchContainer {
+  right: 0mm;
+  order: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+}
+
+#search {
+  z-index: 1;
+  background-color: #adadad;
+  outline: 0;
+  border-radius: 7rem;
+  height: 1.5rem;
+  border: 0px;
+  text-align: center;
+  margin-top: 1.25vh;
+}
+
+::placeholder {
+  color: #303030;
+}
+
 #roles {
   margin: auto;
   width: 50%;
@@ -70,6 +93,8 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-content: flex-end;
+  order: 1;
+  padding: 0%;
 }
 
 /*Lower Body*/

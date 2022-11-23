@@ -1,5 +1,8 @@
 Features:
 -skallieren
 -suche
--checkboxen
+-checkboxen für Klassen
+-flexible Box für Skills
+-skills copieren
 -Info Button
+-änderungern via JavaScript

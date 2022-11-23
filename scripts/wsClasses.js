@@ -13,7 +13,6 @@ function copy(Copyfield) {
 function hideBySearch() {
   var spec = document.getElementsByClassName("ClassSpecTitle");
   var search = document.getElementById("search").value;
-  console.log(search);
   Array.from(spec).forEach((element) => {
     hideElment(element.parentElement);
     if (element.innerText.toLowerCase().includes(search.toLowerCase())) {
@@ -64,6 +63,7 @@ function spawnDiv(
   buildsString,
   classColor,
   role
+  //ClassId
 ) {
   var div = document.createElement("div");
   div.classList.add("ClassContainer", role);

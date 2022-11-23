@@ -1,0 +1,5 @@
+Features:
+-skallieren
+-suche
+-checkboxen
+-Info Button

@@ -97,6 +97,48 @@ a {
   padding: 0%;
 }
 
+/*info Panel*/
+#infoPanel {
+  left: 0mm;
+  height: 0mm;
+  top: 5vh;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#infoPanel:hover {
+  width: 100vw;
+  height: fit-content;
+  bottom: 100mm;
+  background-color: rgba(56, 56, 56, 1);
+  backdrop-filter: blur(10px);
+  border-top: 1.2mm solid #ea7b0e;
+  border-bottom: 1.2mm solid #ea7b0e;
+  transition: background-color 250ms ease-out;
+}
+#infoPanel:hover #infoImage {
+  display: none;
+}
+
+#infoPanel:hover #infoText {
+  display: block;
+  border: 0mm;
+}
+#infoText {
+  display: none;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#infoImage {
+  width: 9mm;
+  height: 9mm;
+  margin: 1.7mm 1mm 5mm 0.2mm;
+}
+
 /*Lower Body*/
 
 #BigContainer {
@@ -117,8 +159,8 @@ a {
 
 .ClassContainer {
   width: 100mm;
-  background-color: rgba(54, 54, 54, 0.97);
-  z-index: 10;
+  background-color: rgba(54, 54, 54, 0.9);
+  z-index: 1;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -129,6 +171,7 @@ a {
   width: fit-content;
   min-width: 100mm;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .ClassTitle {
@@ -166,11 +209,28 @@ a {
 }
 
 .talentCode {
-  background-color: #121212;
+  background-color: #1a1a1a;
   color: white;
   height: 5mm;
-  border: 1px solid;
+  border: 1px solid #adadad;
   font-size: xx-small;
+}
+
+.talentBtn {
+  background-color: rgba(49, 49, 49, 0);
+  border: 1px solid #adadad;
+  color: rgb(255, 255, 255);
+  height: 6mm;
+  transition: all;
+  transition-duration: 200ms;
+  font-weight: bold;
+}
+.talentBtn:active {
+  color: #ea7b0e;
+}
+.talentBtn:hover {
+  border-color: #ea7b0e;
+  zoom: 1.05;
 }
 
 .ClassHeadline {
@@ -205,6 +265,7 @@ a {
 .talentmargin {
   margin-top: 1mm;
   margin-bottom: 1mm;
+  height: 7mm;
 }
 
 .buildSrc {

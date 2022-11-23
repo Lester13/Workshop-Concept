@@ -3,9 +3,6 @@ function copy(Copyfield) {
   if (navigator.clipboard) {
     var CopyString = document.getElementById(Copyfield).value;
     navigator.clipboard.writeText(CopyString);
-    alert("Code erfolgreich kopiert");
-  } else {
-    alert("Copy failed");
   }
 }
 //--------------------- hide Roles --------------------
@@ -172,6 +169,7 @@ function generateBuilds(name, index) {
   var talentBtn = document.createElement("button");
   talentBtn.setAttribute("onclick", "copy('" + talentInput.id + "')");
   talentBtn.innerText = "kopieren";
+  talentBtn.classList.add("talentBtn");
   talentBox2.appendChild(talentBtn);
   //complete
   talentBox.appendChild(talentBox0);

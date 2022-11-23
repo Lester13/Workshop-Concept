@@ -11,7 +11,7 @@
         type="search"
         id="search"
         placeholder="suchen..."
-        oninput="hideBySearch(event.srcElement.value)"
+        oninput="hideBySearch()"
       />
     </div>
     <div id="ClassInfo">
@@ -23,7 +23,7 @@
                 type="checkbox"
                 checked
                 id="tankCheck"
-                onchange="hideRoles('tank','tankCheck')"
+                onchange="hideBySearch()"
               />
               Tanks</label
             >
@@ -33,8 +33,8 @@
               <input
                 type="checkbox"
                 checked
-                id="healkCheck"
-                onchange="hideRoles('heal','healkCheck')"
+                id="healCheck"
+                onchange="hideBySearch()"
               />
               Heiler</label
             >
@@ -45,7 +45,7 @@
                 type="checkbox"
                 checked
                 id="dpsCheck"
-                onchange="hideRoles('dps','dpsCheck')"
+                onchange="hideBySearch()"
               />
               DPS</label
             >

@@ -10,28 +10,33 @@ function copy(Copyfield) {
 }
 //--------------------- hide Roles --------------------
 
-function hideRoles(role, roleCheckBox) {
-  var roleCheck = document.getElementById(roleCheckBox);
-  var role = document.getElementsByClassName(role);
-  Array.from(role).forEach((element) => {
-    if (roleCheck.checked) {
-      element.style.display = "flex";
-    } else {
-      element.style.display = "none";
+function hideBySearch() {
+  var spec = document.getElementsByClassName("ClassSpecTitle");
+  var search = document.getElementById("search").value;
+  console.log(search);
+  Array.from(spec).forEach((element) => {
+    hideElment(element.parentElement);
+    if (element.innerText.toLowerCase().includes(search.toLowerCase())) {
+      document.getElementById("tankCheck").checked &&
+        element.parentElement.classList.contains("tank") &&
+        showElment(element.parentElement);
+
+      document.getElementById("healCheck").checked &&
+        element.parentElement.classList.contains("heal") &&
+        showElment(element.parentElement);
+
+      document.getElementById("dpsCheck").checked &&
+        element.parentElement.classList.contains("dps") &&
+        showElment(element.parentElement);
     }
   });
 }
 
-function hideBySearch(search) {
-  var spec = document.getElementsByClassName("ClassSpecTitle");
-  console.log(search);
-  Array.from(spec).forEach((element) => {
-    if (element.innerText.toLowerCase().includes(search.toLowerCase())) {
-      element.parentElement.style.display = "flex";
-    } else {
-      element.parentElement.style.display = "none";
-    }
-  });
+function hideElment(element) {
+  element.style.display = "none";
+}
+function showElment(element) {
+  element.style.display = "flex";
 }
 
 //--------------------- generate Class div script --------------------
